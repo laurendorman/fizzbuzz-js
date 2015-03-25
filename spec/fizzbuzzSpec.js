@@ -1,38 +1,38 @@
-var FizzBuzz = require('../lib/fizzbuzz'); 
+var FizzBuzzGame = require('../lib/fizzbuzz'); 
 
 describe('number one is passed in', function() {
   it('returns number one', function() {
-    expect(FizzBuzz(1)).toEqual(1);
+    expect(NotAFizzyBuzzyThing(1)).toEqual(1);
   });
 });
 
 describe('number eight is passed in', function() {
   it('returns number eight', function() {
-    expect(FizzBuzz(8)).toEqual(8);
+    expect(NotAFizzyBuzzyThing(8)).toEqual(8);
   });
 });
 
 describe('number divisible by three', function() {
   it('returns Fizz', function() {
-    expect(FizzBuzz(3)).toEqual('Fizz');
+    expect(Fizz(3)).toEqual('Fizz');
   });
 });
 
 describe('number divisible by three', function() {
   it('returns Fizz', function() {
-    expect(FizzBuzz(9)).toEqual('Fizz');
+    expect(Fizz(9)).toEqual('Fizz');
   });
 });
 
 describe('number divisible by five', function() {
   it('returns Buzz', function() {
-    expect(FizzBuzz(5)).toEqual('Buzz');
+    expect(Buzz(5)).toEqual('Buzz');
   });
 });
 
 describe('number divisible by five', function() {
   it('returns Buzz', function() {
-    expect(FizzBuzz(50)).toEqual('Buzz');
+    expect(Buzz(50)).toEqual('Buzz');
   });
 });
 
